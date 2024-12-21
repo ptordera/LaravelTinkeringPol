@@ -1,2 +1,7 @@
 [build.environment]
   PHP_VERSION = "8.2"
+
+[[redirects]]
+  from = "/*"
+  to = "/resources/views/welcome.blade.php"
+  status = 200
