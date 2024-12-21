@@ -13,3 +13,7 @@ Route::resource('peliculas', PeliculaController::class);
 use App\Http\Controllers\MotoController;
 
 Route::resource('motos', MotoController::class);
+
+Route::get('/{any}', function () {
+    return view('welcome');
+})->where('any', '.*');
